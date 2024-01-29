@@ -13,3 +13,28 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+
+let practice = function(myArg) {
+    if (typeof myArg === "number") {
+       return myArg * 3;
+    } else if (typeof myArg === "string") {
+       return "ARRR!";
+    } else {
+       return myArg;
+    }
+ 
+ }
+
+ console.log(practice(arr));
+
+ let newArray = function (n) {
+     if(typeof n === "number")
+      return n*3;
+    else if(typeof n === "string")
+    return "ARRR!";
+ };
+ 
+ let resultArray = arr.map(newArray);
+ 
+ console.log(arr);
+ console.log(resultArray);
