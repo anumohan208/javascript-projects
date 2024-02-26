@@ -38,3 +38,17 @@ let practice = function(myArg) {
  
  console.log(arr);
  console.log(resultArray);
+
+ let f1 = function(str) {
+    return str + str;
+};
+
+let f2 = f1;
+
+console.log(f2("abc"));
+
+function callMe(func) {
+    func();
+}
+
+callMe("Al");

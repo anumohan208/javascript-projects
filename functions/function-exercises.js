@@ -74,10 +74,39 @@ function makeDiamond(height) {
     let diamond= upperTriangle+lowerTriangle;
     return diamond;
 }
-console.log(makeLine(5));
-console.log(makeSquare(8));
-console.log(makeRectangle(3, 4));
-console.log(makeDownwardStairs(5));
-console.log(makeSpaceLine(3, 5));
-console.log(makeIsoscelesTriangle(5));
-console.log(makeDiamond(5));
+// console.log(makeLine(5));
+// console.log(makeSquare(8));
+// console.log(makeRectangle(3, 4));
+// console.log(makeDownwardStairs(5));
+// console.log(makeSpaceLine(3, 5));
+// console.log(makeIsoscelesTriangle(5));
+// console.log(makeDiamond(5));
+
+function plusTwo(num) {
+    return num + 2;
+}
+
+let a = 2;
+
+for (let i=0; i < 4; i++) {
+    a = plusTwo(a);
+}
+
+console.log(a);
+
+function repeater(str) {
+    let repeated = str + str;
+    console.log(repeated);
+}
+
+repeater('Bob');
+
+let num = 42;
+
+function isEven (num) {
+   return num % 2 === 0;
+}
+let s=['abcd','123',456,'anu'];
+console.log(s[1].split('').reverse().join(''));
+let str1=123;
+console.log(String(str1));
